@@ -1,4 +1,4 @@
-## Feature Engineering을 통한 코로나 확진사 수 예측
+## Feature Engineering을 통한 코로나 확진자 수 예측
 
 [과제1] 2022.06
 
@@ -35,4 +35,28 @@ X_train, Y_train, = df [ .... ]    # 제시된 훈련 데이터를 선별
 X_test, Y_test = df [ ........ ]   # 제시된 테스트 데이터 선별
 model = Ridge()
 score = model.fit(X_train, Y_train).score(X_test, Y_test)
-print("Test Score : {:.4f}".format(score))```
+print("Test Score : {:.4f}".format(score))
+```
+
+
+### 1. Data Processing
+
+* createDt : 등록 날짜
+* deathCnt : 사망자 수
+* defCnt : 확진자 수
+* gubunEn : 시도명(영어)
+* incDec : 전일대비 증감 수
+* localOccCnt : 지역발생 수
+* overFlowCnt : 해외유입 수
+* qurRate : 10만명당 발생률
+* seq : 게시글번호
+* stdDay : 기준일시
+* updateDt : 수정일시분초
+
+![image](https://user-images.githubusercontent.com/87981867/176192146-e63188c6-9200-46bd-955e-95cf12ca3eb7.png)
+
+- 의미없는 변수 제거
+- gubunEn 변수가 Total인 데이터만 추출
+- 날짜 데이터(createDt) datetime 변환
+
+![image](https://user-images.githubusercontent.com/87981867/176192773-bcd10715-a717-4349-a1c0-ba1c673da778.png)
