@@ -60,3 +60,20 @@ print("Test Score : {:.4f}".format(score))
 - 날짜 데이터(createDt) datetime 변환
 
 ![image](https://user-images.githubusercontent.com/87981867/176192773-bcd10715-a717-4349-a1c0-ba1c673da778.png)
+
+### 2. Correlation Analysis
+
+#### 상관분석(Correlation Analysis)
+: 두 변수간에 어떤 선형적 관계를 가지는지 분석하는 기법으로 상관계수를 이용하여 측정
+
+#### 상관계수(Correaltion Coefficient)
+
+- 상관계수 r = X 와 Y가 함께 변하는 정도 또는 X와 Y가 각각 변하는 정도
+- 상관계수(r)은 1 또는 -1에 가까울 수록 두 변수가 매우 상관이 있음
+- 상관계수가 0이면 상관이 없다는 것보단 선형의 상관관계가 아니다는 것이 정확
+
+![image](https://user-images.githubusercontent.com/87981867/176677825-c37ec6dd-1ad4-40bb-a6e9-c837d9704786.png)
+
+![image](https://user-images.githubusercontent.com/87981867/176678343-3c47e421-412e-4fd8-8a8d-440248aafcf2.png)
+
+- 확진자 수(defCnt)와 가장 상관있는 변수는 deathCnt, incDec, localOccCnt 이다. 
