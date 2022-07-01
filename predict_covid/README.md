@@ -87,6 +87,8 @@ print("Test Score : {:.4f}".format(score))
 - 독립변수 : 영향을 미칠 것으로 생각되는 변수 -> 확진자 수(defCnt)를 제외한 모든 변수
 - 종속변수 : 영향을 받을 것으로 생각되는 변수 -> 확진자 수(defCnt)
 
+![image](https://user-images.githubusercontent.com/87981867/176906449-a2da15b1-e0f1-4ae2-8871-520084e7cc14.png)
+
 ![image](https://user-images.githubusercontent.com/87981867/176905942-79acad11-e212-4afa-801e-d2122981ad32.png)
 
 ![image](https://user-images.githubusercontent.com/87981867/176905996-2a4e8b58-f3a7-45c7-a25b-62da4b703a31.png)
