@@ -77,3 +77,22 @@ print("Test Score : {:.4f}".format(score))
 ![image](https://user-images.githubusercontent.com/87981867/176678343-3c47e421-412e-4fd8-8a8d-440248aafcf2.png)
 
 - 확진자 수(defCnt)와 가장 상관있는 변수는 deathCnt, incDec, localOccCnt 이다. 
+
+
+### 3. Multi Regression Analysis
+
+#### 다중회귀분석(Multi Regression Analysis)
+
+- 두 개 이상의 독립변수들과 하나의 종속변수의 관계를 분석하는 기법
+- 독립변수 : 영향을 미칠 것으로 생각되는 변수 -> 확진자 수(defCnt)를 제외한 모든 변수
+- 종속변수 : 영향을 받을 것으로 생각되는 변수 -> 확진자 수(defCnt)
+
+![image](https://user-images.githubusercontent.com/87981867/176905942-79acad11-e212-4afa-801e-d2122981ad32.png)
+
+![image](https://user-images.githubusercontent.com/87981867/176905996-2a4e8b58-f3a7-45c7-a25b-62da4b703a31.png)
+
+- R-squared or Adj.R-squared : 데이터를 통해 현재 모델이 얼마나 잘 설명하고 있는지 나타내는 지수(보통 1에 가까울 수록 높은 설명력)
+- Prob(F-statistic) : 모델에 대한 p-value(보통 0.05 이하인 경우 통계적으로 유의)
+- P>[t] : 각 독립변수에 대한 p-value(보통 0.05 이하인 경우 통계적으로 유의)
+- R-squared : 1.00 이므로 독립변수들의 설명력 충분
+- 하지만 qurRate 변수를 제외하고는 p-value가 통계적의로 유의하지 않음
