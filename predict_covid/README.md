@@ -101,7 +101,7 @@ print("Test Score : {:.4f}".format(score))
 
 ### 4. Random Forest Feature importance (참고)
 
-![image](https://user-images.githubusercontent.com/87981867/177110335-478b6425-3e1c-4f87-9f8a-c5160d4b8419.png)
+![image](https://user-images.githubusercontent.com/87981867/177110667-e2023c79-eebf-46c5-87ad-fc9b95d7181a.png)
 
 - Random Forest를 활용한 변수 중요도(Feature Importance)
 - 뽑아낸 변수들의 중요도가 모두 높게 나옴
