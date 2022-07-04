@@ -98,3 +98,11 @@ print("Test Score : {:.4f}".format(score))
 - P>[t] : 각 독립변수에 대한 p-value(보통 0.05 이하인 경우 통계적으로 유의)
 - R-squared : 1.00 이므로 독립변수들의 설명력 충분
 - 하지만 qurRate 변수를 제외하고는 p-value가 통계적의로 유의하지 않음
+
+### 4. Random Forest Feature importance (참고)
+
+![image](https://user-images.githubusercontent.com/87981867/177110335-478b6425-3e1c-4f87-9f8a-c5160d4b8419.png)
+
+- Random Forest를 활용한 변수 중요도(Feature Importance)
+- 뽑아낸 변수들의 중요도가 모두 높게 나옴
+
