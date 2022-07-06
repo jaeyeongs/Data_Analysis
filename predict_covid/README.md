@@ -106,3 +106,20 @@ print("Test Score : {:.4f}".format(score))
 - Random Forest를 활용한 변수 중요도(Feature Importance)
 - 뽑아낸 변수들의 중요도가 모두 높게 나옴
 
+### 5. Modeling : Ridge Regression
+
+![image](https://user-images.githubusercontent.com/87981867/177470602-4e35359e-d183-46f1-b171-f91c31a0afdb.png)
+
+- 릿지 회귀는 기존 선형 회귀(Linear Rigression)의 과적합을 해소해주는 선형회귀 방법이다.
+- 편향을 조금 높이는 대신 분산을 줄이는 방법으로 정규화를 수행
+
+
+```
+# 훈련 데이터셋 : 2021년 2월 1일 ~ 2022년 1월 31일까지의 데이터
+# 테스트 데이터셋 : 2022년 2월 1일 ~ 2022년 4월 17일까지의 데이터
+
+train_date = total.query('"2021-02-01" <= createDt <= "2022-01-31"') 
+test_date = total.query('"2022-02-01" <= createDt <= "2022-04-17"')
+```
+
+
