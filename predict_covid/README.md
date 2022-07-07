@@ -116,10 +116,25 @@ print("Test Score : {:.4f}".format(score))
 
 ```
 # 훈련 데이터셋 : 2021년 2월 1일 ~ 2022년 1월 31일까지의 데이터
-# 테스트 데이터셋 : 2022년 2월 1일 ~ 2022년 4월 17일까지의 데이터
-
-train_date = total.query('"2021-02-01" <= createDt <= "2022-01-31"') 
-test_date = total.query('"2022-02-01" <= createDt <= "2022-04-17"')
+train_date = total.query('"2021-02-01" <= createDt <= "2022-01-31"')
+train_date
 ```
+![image](https://user-images.githubusercontent.com/87981867/177774405-9f1f57ce-3749-42e1-9101-136f3d5e746b.png)
 
+```
+# 테스트 데이터셋 : 2022년 2월 1일 ~ 2022년 4월 17일까지의 데이터
+test_date = total.query('"2022-02-01" <= createDt <= "2022-04-17"')
+test_date
+```
+![image](https://user-images.githubusercontent.com/87981867/177774464-9c3b6b20-fb08-45b2-9a37-7a0e69acb6fa.png)
+
+```
+from sklearn.linear_model import Ridge
+
+model = Ridge()
+score = model.fit(X_train, y_train).score(X_test, y_test)
+print("Test Score : {:.4f}".format(score))
+
+Test Score : 0.9832
+```
 
