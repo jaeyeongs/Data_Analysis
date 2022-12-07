@@ -1,3 +1,5 @@
+# 로그 분석을 통한 보안 위험도 예측 
+
 ## 접근 방식
 
 - 7을 구별하기 위해서 비지도 학습으로 접근을 시도했고 오토인코더, one-class-svm, isolated-randomforest 등의 비지도 학습 방법을 적용해 보았으나 기존과 단어 몇개만 다른 경우들이 7 특성 떄문인지 성능이 좋지 않음
@@ -17,6 +19,8 @@
     5. 4번에서 Threshold를 통해 걸러지지 않는다면 3번과 동일한 모델로 predict 적용 (A방법)
     
 [참고]
+
+[데이콘](https://dacon.io/competitions/official/235717/overview/description)
 https://dacon.io/competitions/official/235717/codeshare/2536?page=1&dtype=recent
 https://dacon.io/competitions/official/235717/codeshare/2539?page=1&dtype=recent 
 https://dacon.io/competitions/official/235717/support/403102?page=1&dtype=recent 
